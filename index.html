@@ -319,7 +319,46 @@
                     <svg class="icon-btn" width="18" height="18">
                         <use href="./images/sprite.svg#icon-close-black"></use>
                     </svg>
-                   </button>                 
+                   </button>
+                   <form action="#" class="modal-form">
+                       <p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
+                   <label class="modal-form-field">
+                    Имя
+                    <span class="modal-form-input-wrapper">
+                    <input type="text" name="user-name" class="modal-form-input">
+                    <svg class="field-icon">
+                        <use href="./images/sprite.svg#icon-user"></use>
+                    </svg>
+                    </span>
+                   </label>
+                <label class="modal-form-field">
+                    Телефон
+                    <span class="modal-form-input-wrapper">
+                    <input type="tel" name="user-tel" class="modal-form-input">
+                    <svg class="field-icon">
+                        <use href="./images/sprite.svg#icon-phone"></use>
+                    </svg>
+                    </span>
+                </label>
+                <label class="modal-form-field">
+                    Почта
+                    <span class="modal-form-input-wrapper">
+                    <input type="mail" name="user-mail" class="modal-form-input">
+                    <svg class="field-icon">
+                        <use href="./images/sprite.svg#icon-email"></use>
+                    </svg>
+                    </span>
+                </label>
+                <label class="modal-form-field">
+                    Комментарий
+                    <textarea name="user-comment">                        
+                    </textarea></label>
+                    <input type="checkbox" name="user-policy" value="accept-policy" class="modal-policy">
+                    <label class="modal-policy-text">Соглашаюсь с рассылкой и принимаю 
+                        <a href="#">Условия договора</a>
+                    </label>
+                    <button type="submit" class="modal-form-btn">Отправить</button>
+                    </form>                 
                </div>
            </div>
         <script src="./js/modal.js"></script>
