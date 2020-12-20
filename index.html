@@ -287,7 +287,7 @@
             </div>
               <!--Социальные сети-->
               <div class="social-footer">
-              <h4 class="footer-social-title">присоединяйтесь</h4>
+              <p class="footer-social-title">присоединяйтесь</p>
             <ul class="social-list-footer list">
                 <li class="social-list-item-footer">
                     <a class="social-list-link-footer" href="#"><svg class="icon" width="20" height="20">
@@ -311,7 +311,19 @@
                 </li>
             </ul>                
             </div>
+            <!-- Подпишитесь -->
+            <div class="subscribe-footer">
+                <p class="subscribe-footer-title">Подпишитесь на рассылку</p>
+                <form action="#" class="subscribe-form">
+                    <label class="subscribe-form-field">
+                        <input type="email" name="user-mail" class="subscribe-form-input" placeholder="E-mail">
+                    </label>
+                    <button type="button" class="subscribe-form-btn">Подписаться <svg class="subscribe-icon" width="24" height="24">
+                        <use href="./images/sprite.svg#icon-plane"></use>
+                    </svg></button>
+                </form>
             </div>
+            </div>            
            </footer>
            <div class="backdrop is-hidden" data-modal>
                <div class="modal">
@@ -343,7 +355,7 @@
                 <label class="modal-form-field">
                     Почта
                     <span class="modal-form-input-wrapper">
-                    <input type="mail" name="user-mail" class="modal-form-input">
+                    <input type="email" name="user-mail" class="modal-form-input">
                     <svg class="field-icon">
                         <use href="./images/sprite.svg#icon-email"></use>
                     </svg>
@@ -351,11 +363,11 @@
                 </label>
                 <label class="modal-form-field">
                     Комментарий
-                    <textarea name="user-comment">                        
-                    </textarea></label>
-                    <input type="checkbox" name="user-policy" value="accept-policy" class="modal-policy">
-                    <label class="modal-policy-text">Соглашаюсь с рассылкой и принимаю 
-                        <a href="#">Условия договора</a>
+                    <textarea class="modal-form-message" name="user-message" placeholder="Введите текст"></textarea>
+                    </label>
+                    <input id="modal-user-policy" type="checkbox" name="user-policy" value="accept-policy" class="modal-policy visually-hidden">
+                    <label for="modal-user-policy" class="modal-policy-text">Соглашаюсь с рассылкой и принимаю 
+                        <a class="policy-text" href="#">Условия договора</a>
                     </label>
                     <button type="submit" class="modal-form-btn">Отправить</button>
                     </form>                 
